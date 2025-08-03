@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Employee Portal";
+}
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Welcome to the Employee Portal</h1>
+        <p class="lead text-muted">
+            Manage your employees, view profiles, and streamline your HR tasks easily.
+        </p>
+    </div>
+
+    <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <span class="fs-1 text-success">👥</span>
+                    </div>
+                    <h5 class="card-title">View Employees</h5>
+                    <p class="card-text text-muted">Browse the employee directory and check their profiles.</p>
+                    <a href="/Employee" class="btn btn-outline-success w-100">Go to List</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <span class="fs-1 text-primary">➕</span>
+                    </div>
+                    <h5 class="card-title">Add New Employee</h5>
+                    <p class="card-text text-muted">Register a new employee into the system & manage.</p>
+                    <a href="/Employee/Create" class="btn btn-outline-primary w-100">Add Employee</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <span class="fs-1 text-warning">⚙️</span>
+                    </div>
+                    <h5 class="card-title">Settings</h5>
+                    <p class="card-text text-muted">Configure your employee portal settings here.</p>
+                    <a href="#" class="btn btn-outline-warning w-100">Configure</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

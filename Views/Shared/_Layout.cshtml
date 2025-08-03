@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] PracticeAspcoreMVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/PracticeAspcoreMVC.styles.css" asp-append-version="true" />
+</head>
+<body>
+    @{
+        var currentController = ViewContext.RouteData.Values["Controller"]?.ToString();
+        var currentAction = ViewContext.RouteData.Values["Action"]?.ToString();
+        bool isHomePage = currentController == "Home" && currentAction == "Index";
+    }
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="bg-dark text-white p-3" style="min-width: 220px; min-height: 100vh;">
+            <h4 class="text-info">Employee Portal</h4>
+            <hr style="border-color: #555;" />
+
+            <ul class="nav flex-column">
+                @if (!isHomePage)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Home" asp-action="Index">
+                            🏠 Home
+                        </a>
+                    </li>
+                }
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Employee" asp-action="Index">
+                        🚻Employees
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Settings" asp-action="Index">
+                        ⚙️ Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main content -->
+        <div class="flex-grow-1 p-4">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm rounded mb-3">
+                    <div class="container-fluid">
+                        @{
+                            string content=" ";
+
+                            if(currentController=="Home" && currentAction=="Index"){
+                                content = "Home";
+                            }
+                            else if(currentAction=="Index"&&currentController=="Employee"){
+                                content = "Employee Data";
+                            }
+                            else if (currentAction == "create" && currentController == "Employee"){
+                                content = "Modification";
+                            }
+                        }
+                        <a class="navbar-brand" asp-controller=@currentController asp-action=@currentAction>@content</a>
+                    </div>
+                </nav>
+            </header>
+
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+
+            <footer class="border-top pt-3 mt-4 text-muted small">
+                &copy; 2025 - PracticeAspcoreMVC - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
