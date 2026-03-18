@@ -3,6 +3,37 @@
   "WorkspaceRootPath": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dell\\Desktop\\bbbb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,24 +42,8 @@
       "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\employee\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{477E380C-468A-4254-A789-854BA3F01D72}|PracticeAspcoreMVC.csproj|c:\\users\\dell\\source\\repos\\practiceaspcoremvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -46,7 +61,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,10 +70,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             },
             {
               "$type": "Bookmark",
@@ -79,32 +90,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Employee\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Employee\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\dell\\Desktop\\bbbb\\web.config",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\bbbb\\web.config",
+              "ToolTip": "C:\\Users\\dell\\Desktop\\bbbb\\web.config",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\bbbb\\web.config",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-03-10T17:02:58.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T18:26:01.854Z",
+              "WhenOpened": "2026-03-10T16:32:05.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Employee\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Employee\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T16:53:23.824Z",
+              "WhenOpened": "2026-03-10T16:31:57.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -112,12 +134,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T15:24:33.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T15:24:33.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -125,12 +146,11 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-27T18:12:45.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T18:12:45.206Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -138,51 +158,84 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-27T17:45:49.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T17:45:49.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "create.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\create.cshtml",
               "RelativeDocumentMoniker": "Views\\Employee\\create.cshtml",
               "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\create.cshtml",
               "RelativeToolTip": "Views\\Employee\\create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAACAMzMzMzMrwDEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-27T16:58:44.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T16:58:44.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Employee\\Index.cshtml",
               "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Index.cshtml",
               "RelativeToolTip": "Views\\Employee\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-27T16:33:24.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T17:38:36.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Employee\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-03T16:53:23.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
               "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAswE4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAMzMzMzMLwCgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T16:07:10.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T16:07:10.923Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Views\\Employee\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Employee\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-03T18:26:01.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\PracticeAspcoreMVC\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
@@ -191,6 +244,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T16:03:39.474Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         },

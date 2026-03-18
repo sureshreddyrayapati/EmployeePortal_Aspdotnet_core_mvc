@@ -85,7 +85,7 @@ namespace PracticeAspcoreMVC.Controllers
         public IActionResult Edit( Employee employee)
         {
             if (!ModelState.IsValid)
-            {
+            { 
                 return View(employee);
             }
             var existing =employeList.FirstOrDefault(e=>e.EmployeeId==employee.EmployeeId);
