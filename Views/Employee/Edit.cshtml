@@ -1,53 +1,57 @@
-﻿@model PracticeAspcoreMVC.Models.Employee
+@model PracticeAspcoreMVC.Models.Employee
 
 @{
     ViewData["Title"] = "Edit Employee";
 }
 
-<div class="container mt-4">
-    <div class="card shadow-lg border-0 rounded">
-        <div class="card-header bg-primary text-dark">
-            <h4 class="mb-0">✏️ Edit Employee</h4>
+<section class="page-section">
+    <div class="form-shell">
+        <div class="form-header">
+            <div>
+                <span class="eyebrow">Update</span>
+                <h2>Edit employee details</h2>
+                <p>Adjust the employee record and save your changes when everything looks right.</p>
+            </div>
+            <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
         </div>
-        <div class="card-body">
-            <form asp-action="Edit" method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
-                <input type="hidden" asp-for="EmployeeId" />
 
-                <div class="row gy-3">
-                    <div class="col-md-6">
-                        <label asp-for="EmployeeName" class="form-label fw-semibold"></label>
-                        <input asp-for="EmployeeName" class="form-control" placeholder="Enter full name" />
-                        <span asp-validation-for="EmployeeName" class="text-danger small"></span>
-                    </div>
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <input type="hidden" asp-for="EmployeeId" />
 
-                    <div class="col-md-3">
-                        <label asp-for="EmployeeAge" class="form-label fw-semibold"></label>
-                        <input asp-for="EmployeeAge" class="form-control" type="number" placeholder="Age" />
-                        <span asp-validation-for="EmployeeAge" class="text-danger small"></span>
-                    </div>
-
-                    <div class="col-md-3">
-                        <label asp-for="JoingDate" class="form-label fw-semibold"></label>
-                        <input asp-for="JoingDate" class="form-control" type="date" />
-                        <span asp-validation-for="JoingDate" class="text-danger small"></span>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label asp-for="Location" class="form-label fw-semibold"></label>
-                        <input asp-for="Location" class="form-control" placeholder="City or branch" />
-                        <span asp-validation-for="Location" class="text-danger small"></span>
-                    </div>
+            <div class="form-grid">
+                <div class="field-block field-block-full">
+                    <label asp-for="EmployeeName" class="form-label"></label>
+                    <input asp-for="EmployeeName" class="form-control" placeholder="Enter full name" />
+                    <span asp-validation-for="EmployeeName" class="text-danger small"></span>
                 </div>
 
-                <div class="mt-4 d-flex justify-content-end gap-2">
-                    <button type="submit" class="btn btn-warning px-4">Update</button>
-                    <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+                <div class="field-block">
+                    <label asp-for="EmployeeAge" class="form-label"></label>
+                    <input asp-for="EmployeeAge" class="form-control" type="number" placeholder="Enter age" />
+                    <span asp-validation-for="EmployeeAge" class="text-danger small"></span>
                 </div>
-            </form>
-        </div>
+
+                <div class="field-block">
+                    <label asp-for="JoingDate" class="form-label"></label>
+                    <input asp-for="JoingDate" class="form-control" type="date" />
+                    <span asp-validation-for="JoingDate" class="text-danger small"></span>
+                </div>
+
+                <div class="field-block field-block-full">
+                    <label asp-for="Location" class="form-label"></label>
+                    <input asp-for="Location" class="form-control" placeholder="Enter city or branch name" />
+                    <span asp-validation-for="Location" class="text-danger small"></span>
+                </div>
+            </div>
+
+            <div class="hero-actions mt-4">
+                <button type="submit" class="btn btn-warning">Save Changes</button>
+                <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+            </div>
+        </form>
     </div>
-</div>
+</section>
 
 @section Scripts {
     @{

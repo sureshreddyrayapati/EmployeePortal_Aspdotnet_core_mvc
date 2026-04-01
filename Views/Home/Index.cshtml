@@ -1,53 +1,126 @@
-﻿@{
+@{
     ViewData["Title"] = "Employee Portal";
 }
 
-<div class="container py-5">
-    <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold text-primary">Welcome to the Employee Portal</h1>
-        <p class="lead text-muted">
-            Manage your employees, view profiles, and streamline your HR tasks easily.
-        </p>
+<section class="page-section hero-panel">
+    <div class="hero-grid">
+        <div class="hero-copy">
+            <span class="eyebrow">Employee Operations</span>
+            <h1>Manage your workforce with a calmer, clearer dashboard.</h1>
+            <p>
+                Review employee records, onboard new team members, and keep HR tasks moving with a layout that stays readable on laptops, tablets, and phones.
+            </p>
+
+            <div class="hero-actions">
+                <a asp-controller="Employee" asp-action="Index" class="btn btn-primary">Open Employee Directory</a>
+                <a asp-controller="Employee" asp-action="Create" class="btn btn-outline-primary">Add New Employee</a>
+            </div>
+
+            <div class="stat-grid">
+                <div class="stat-tile">
+                    <span class="stat-value">5+</span>
+                    <span class="stat-label">Sample employee records ready to manage</span>
+                </div>
+                <div class="stat-tile">
+                    <span class="stat-value">1</span>
+                    <span class="stat-label">Unified place for create, edit, and delete flows</span>
+                </div>
+                <div class="stat-tile">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Responsive layout across common screen sizes</span>
+                </div>
+            </div>
+        </div>
+
+        <aside class="hero-aside">
+            <h2 class="section-title">What this refresh improves</h2>
+            <ul class="hero-list">
+                <li>
+                    <strong>Faster scanning</strong>
+                    <span>Stronger spacing, typography, and card structure make the app easier to read.</span>
+                </li>
+                <li>
+                    <strong>Better mobile support</strong>
+                    <span>Tables stack cleanly and forms remain comfortable on smaller screens.</span>
+                </li>
+                <li>
+                    <strong>More consistent styling</strong>
+                    <span>Buttons, forms, and content sections now share one visual system.</span>
+                </li>
+            </ul>
+        </aside>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="section-heading">
+        <div>
+            <h2>Quick actions</h2>
+            <p>Jump into the most common tasks without hunting through the interface.</p>
+        </div>
     </div>
 
-    <div class="row justify-content-center g-4">
-        <div class="col-md-4">
-            <div class="card shadow-sm border-0 h-100">
-                <div class="card-body text-center">
-                    <div class="mb-3">
-                        <span class="fs-1 text-success">👥</span>
-                    </div>
-                    <h5 class="card-title">View Employees</h5>
-                    <p class="card-text text-muted">Browse the employee directory and check their profiles.</p>
-                    <a href="/Employee" class="btn btn-outline-success w-100">Go to List</a>
-                </div>
+    <div class="card-grid">
+        <article class="glass-card feature-card">
+            <div class="feature-icon">D</div>
+            <h3>Directory access</h3>
+            <p>Browse employees, search by name or location, and take action from one organized list.</p>
+            <div class="hero-actions">
+                <a asp-controller="Employee" asp-action="Index" class="btn btn-outline-primary">View Employees</a>
+            </div>
+        </article>
+
+        <article class="glass-card feature-card">
+            <div class="feature-icon">N</div>
+            <h3>New onboarding</h3>
+            <p>Create employee records through a cleaner form with improved spacing and easier input flow.</p>
+            <div class="hero-actions">
+                <a asp-controller="Employee" asp-action="Create" class="btn btn-outline-primary">Create Employee</a>
+            </div>
+        </article>
+
+        <article class="glass-card feature-card">
+            <div class="feature-icon">P</div>
+            <h3>Portal guidance</h3>
+            <p>Keep privacy expectations visible so employee information is handled carefully across the portal.</p>
+            <div class="hero-actions">
+                <a asp-controller="Home" asp-action="Privacy" class="btn btn-outline-primary">View Privacy</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="glass-card">
+        <div class="section-heading">
+            <div>
+                <h2>Design highlights</h2>
+                <p>The new interface leans on reusable styles so future pages can follow the same pattern.</p>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="card shadow-sm border-0 h-100">
-                <div class="card-body text-center">
-                    <div class="mb-3">
-                        <span class="fs-1 text-primary">➕</span>
-                    </div>
-                    <h5 class="card-title">Add New Employee</h5>
-                    <p class="card-text text-muted">Register a new employee into the system & manage.</p>
-                    <a href="/Employee/Create" class="btn btn-outline-primary w-100">Add Employee</a>
+        <div class="metric-stack">
+            <div class="metric-row">
+                <div>
+                    <strong class="metric-value">Glass-style containers</strong>
+                    <span class="metric-label">Soft layered panels create a more modern and polished look.</span>
                 </div>
+                <span class="tag-chip">Visual refresh</span>
             </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="card shadow-sm border-0 h-100">
-                <div class="card-body text-center">
-                    <div class="mb-3">
-                        <span class="fs-1 text-warning">⚙️</span>
-                    </div>
-                    <h5 class="card-title">Settings</h5>
-                    <p class="card-text text-muted">Configure your employee portal settings here.</p>
-                    <a href="#" class="btn btn-outline-warning w-100">Configure</a>
+            <div class="metric-row">
+                <div>
+                    <strong class="metric-value">Responsive data presentation</strong>
+                    <span class="metric-label">Employee rows convert cleanly into stacked cards on smaller screens.</span>
                 </div>
+                <span class="tag-chip">Mobile ready</span>
+            </div>
+            <div class="metric-row">
+                <div>
+                    <strong class="metric-value">Consistent interaction states</strong>
+                    <span class="metric-label">Buttons, inputs, and navigation now feel part of one design system.</span>
+                </div>
+                <span class="tag-chip">Reusable CSS</span>
             </div>
         </div>
     </div>
-</div>
+</section>

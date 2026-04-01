@@ -1,49 +1,56 @@
-﻿@model PracticeAspcoreMVC.Models.Employee
+@model PracticeAspcoreMVC.Models.Employee
 
 @{
     ViewData["Title"] = "Create Employee";
 }
 
-<div class="container mt-4">
-    <div class="card shadow-lg border-0 rounded">
-        <div class="card-header bg-primary text-white">
-            <h4 class="mb-0">📝 Create New Employee</h4>
+<section class="page-section">
+    <div class="form-shell">
+        <div class="form-header">
+            <div>
+                <span class="eyebrow">Create</span>
+                <h2>Add a new employee</h2>
+                <p>Enter the details below to add a new team member to the portal.</p>
+            </div>
+            <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
         </div>
-        <div class="card-body">
-            <form asp-action="Create">
-                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
-                <div class="mb-3">
-                    <label asp-for="EmployeeName" class="form-label fw-semibold"></label>
+
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="form-grid">
+                <div class="field-block field-block-full">
+                    <label asp-for="EmployeeName" class="form-label"></label>
                     <input asp-for="EmployeeName" class="form-control" placeholder="Enter full name" />
                     <span asp-validation-for="EmployeeName" class="text-danger small"></span>
                 </div>
 
-                <div class="mb-3">
-                    <label asp-for="EmployeeAge" class="form-label fw-semibold"></label>
+                <div class="field-block">
+                    <label asp-for="EmployeeAge" class="form-label"></label>
                     <input asp-for="EmployeeAge" class="form-control" type="number" placeholder="Enter age" />
                     <span asp-validation-for="EmployeeAge" class="text-danger small"></span>
                 </div>
 
-                <div class="mb-3">
-                    <label asp-for="JoingDate" class="form-label fw-semibold"></label>
+                <div class="field-block">
+                    <label asp-for="JoingDate" class="form-label"></label>
                     <input asp-for="JoingDate" class="form-control" type="date" />
                     <span asp-validation-for="JoingDate" class="text-danger small"></span>
                 </div>
 
-                <div class="mb-3">
-                    <label asp-for="Location" class="form-label fw-semibold"></label>
-                    <input asp-for="Location" class="form-control" placeholder="City or branch name" />
+                <div class="field-block field-block-full">
+                    <label asp-for="Location" class="form-label"></label>
+                    <input asp-for="Location" class="form-control" placeholder="Enter city or branch name" />
                     <span asp-validation-for="Location" class="text-danger small"></span>
                 </div>
+            </div>
 
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="submit" class="btn btn-success px-4">💾 Create</button>
-                    <a asp-action="Index" class="btn btn-outline-secondary">🔙 Back to List</a>
-                </div>
-            </form>
-        </div>
+            <div class="hero-actions mt-4">
+                <button type="submit" class="btn btn-success">Create Employee</button>
+                <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+            </div>
+        </form>
     </div>
-</div>
+</section>
 
 @section Scripts {
     @{

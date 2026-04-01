@@ -1,52 +1,78 @@
-﻿@model List<PracticeAspcoreMVC.Models.Employee>
+@model List<PracticeAspcoreMVC.Models.Employee>
 @{
-   
+    ViewData["Title"] = "Employee Directory";
     var currentFilter = ViewData["CurrentFilter"] as string ?? "";
 }
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <div>
-        <h2 class="text-primary mb-0">Employee List</h2>
+<section class="page-section">
+    <div class="list-toolbar">
+        <div>
+            <span class="eyebrow">Directory</span>
+            <h2 class="mb-1">Employee list</h2>
+            <p class="page-subtitle">Search the team, review details, and make updates from a single responsive table.</p>
+        </div>
+
+        <div class="toolbar-actions">
+            <a class="btn btn-primary" asp-controller="Employee" asp-action="Create">Add New Employee</a>
+        </div>
     </div>
-    <form asp-action="Index" method="get" class="d-flex" role="search">
-        <input name="searchTerm" value="@currentFilter" class="form-control me-2" placeholder="🔍Search name, location, age or ID..." />
-        <button type="submit" class="btn btn-outline-secondary me-2">Search</button>
-        <a asp-action="Index" class="btn btn-link">Clear</a>
-    </form>
-</div>
 
+    <div class="data-panel">
+        <div class="dashboard-toolbar">
+            <form asp-action="Index" method="get" class="search-form" role="search">
+                <input name="searchTerm" value="@currentFilter" class="form-control" placeholder="Search by name, city, age, or employee ID" />
+                <button type="submit" class="btn btn-outline-primary">Search</button>
+                <a asp-action="Index" class="btn btn-link">Clear search</a>
+            </form>
 
-<a class="btn btn-success mb-3" asp-controller="Employee" asp-action="Create">
-    Add New Employee
-</a>
+            <span class="tag-chip">@Model.Count employee@(Model.Count == 1 ? "" : "s") shown</span>
+        </div>
 
-<table class="table table-bordered table-striped table-hover shadow-sm">
-    <thead class="table-dark text-center">
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Employee Name</th>
-            <th scope="col">Age</th>
-            <th scope="col">Joining Date</th>
-            <th scope="col">Location</th>
-             <th scope="col">Actions</th> 
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var emp in Model)
+        @if (Model.Any())
         {
-            <tr>
-                <td class="text-center">@emp.EmployeeId</td>
-                <td>@emp.EmployeeName</td>
-                <td class="text-center">@emp.EmployeeAge</td>
-                <td class="text-center">@emp.JoingDate.ToString("dd-MMM-yyyy")</td>
-                <td>@emp.Location</td>
-                
-                <td class="text-center">
-                    <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@emp.EmployeeId">Edit</a>
-                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@emp.EmployeeId">Delete</a>
-                </td>
-                
-            </tr>
+            <div class="table-shell">
+                <table class="table table-striped align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Employee</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Joining Date</th>
+                            <th scope="col">Location</th>
+                            <th scope="col" class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var emp in Model)
+                        {
+                            <tr>
+                                <td data-label="ID">
+                                    <span class="employee-meta">#@emp.EmployeeId</span>
+                                </td>
+                                <td data-label="Employee">
+                                    <div class="employee-name">@emp.EmployeeName</div>
+                                </td>
+                                <td data-label="Age">@emp.EmployeeAge years</td>
+                                <td data-label="Joining Date">@emp.JoingDate.ToString("dd MMM yyyy")</td>
+                                <td data-label="Location">@emp.Location</td>
+                                <td data-label="Actions" class="text-center">
+                                    <div class="inline-actions justify-content-center">
+                                        <a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@emp.EmployeeId">Edit</a>
+                                        <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@emp.EmployeeId">Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
         }
-    </tbody>
-</table>
+        else
+        {
+            <div class="empty-state">
+                <h3>No employees found</h3>
+                <p>Try a different search term or create a new employee record.</p>
+            </div>
+        }
+    </div>
+</section>

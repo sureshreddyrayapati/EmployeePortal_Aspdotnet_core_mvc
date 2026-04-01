@@ -230,3 +230,6 @@ C:\Users\dell\source\repos\PracticeAspcoreMVC\bin\Debug\net8.0\runtimes\win\lib\
 C:\Users\dell\source\repos\PracticeAspcoreMVC\obj\Debug\net8.0\PracticeAspcoreMVC.csproj.AssemblyReference.cache
 C:\Users\dell\source\repos\PracticeAspcoreMVC\obj\Debug\net8.0\Practice.1695C656.Up2Date
 C:\Users\dell\source\repos\PracticeAspcoreMVC\obj\Debug\net8.0\PracticeAspcoreMVC.sourcelink.json
+C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\obj\Debug\net8.0\PracticeAspcoreMVC.dll
+C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\obj\Debug\net8.0\refint\PracticeAspcoreMVC.dll
+C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\obj\Debug\net8.0\PracticeAspcoreMVC.pdb

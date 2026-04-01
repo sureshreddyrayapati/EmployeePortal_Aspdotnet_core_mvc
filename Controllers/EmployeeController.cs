@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using PracticeAspcoreMVC.Models;
-using System.ComponentModel;
 
 namespace PracticeAspcoreMVC.Controllers
 {
     public class EmployeeController : Controller
     {
         public static List<Employee> employeList;
+        private const string SessionKeyUsername = "LoggedInUser";
 
         static EmployeeController()
         {
@@ -19,6 +21,17 @@ namespace PracticeAspcoreMVC.Controllers
                 new Employee() { EmployeeId = 5, EmployeeName = "Rahul Verma", EmployeeAge = 26, JoingDate = new DateTime(2025, 01, 01), Location = "Mumbai" },
             };
         }
+
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (context.HttpContext.Session.GetString(SessionKeyUsername) == null)
+            {
+                context.Result = RedirectToAction("Login", "Account");
+            }
+
+            base.OnActionExecuting(context);
+        }
+
         public IActionResult Index(string? searchTerm)
         {
             var list = employeList.AsEnumerable();
@@ -37,58 +50,74 @@ namespace PracticeAspcoreMVC.Controllers
 
             return View(list.ToList());
         }
+
         [HttpGet]
-        public IActionResult create()
+        public IActionResult Create()
         {
             return View();
         }
+
         [HttpPost]
-        public IActionResult create(Employee employee)
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Employee employee)
         {
             if (ModelState.IsValid)
             {
-                employee.EmployeeId=employeList.Max(e=>e.EmployeeId)+1;
+                employee.EmployeeId = employeList.Max(e => e.EmployeeId) + 1;
                 employeList.Add(employee);
                 return RedirectToAction("Index");
             }
+
             return View(employee);
         }
+
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            var emp=employeList.FirstOrDefault(e=>e.EmployeeId==id);
+            var emp = employeList.FirstOrDefault(e => e.EmployeeId == id);
             if (emp == null)
             {
                 return NotFound();
             }
+
             return View(emp);
         }
-        [HttpPost , ActionName("Delete")]
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmation(int id)
         {
-            var emp=employeList.FirstOrDefault(e=>e.EmployeeId == id);
+            var emp = employeList.FirstOrDefault(e => e.EmployeeId == id);
             if (emp != null)
             {
                 employeList.Remove(emp);
             }
+
             return RedirectToAction("Index");
         }
+
         [HttpGet]
         public IActionResult Edit(int id)
         {
             var emp = employeList.FirstOrDefault(e => e.EmployeeId == id);
-            if (emp == null) return NotFound();
+            if (emp == null)
+            {
+                return NotFound();
+            }
+
             return View(emp);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit( Employee employee)
+        public IActionResult Edit(Employee employee)
         {
             if (!ModelState.IsValid)
-            { 
+            {
                 return View(employee);
             }
-            var existing =employeList.FirstOrDefault(e=>e.EmployeeId==employee.EmployeeId);
+
+            var existing = employeList.FirstOrDefault(e => e.EmployeeId == employee.EmployeeId);
             if (existing == null)
             {
                 return RedirectToAction("Index");
