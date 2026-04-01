@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PracticeAspcoreMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+668d0838232b46278032010bdb71fd558ba197f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3673b149734cea301b6645f96b48a00fe1a2fb32")]
 [assembly: System.Reflection.AssemblyProductAttribute("PracticeAspcoreMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PracticeAspcoreMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

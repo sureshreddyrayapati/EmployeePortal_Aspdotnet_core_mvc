@@ -1,5 +1,7 @@
 C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\bin\Debug\net10.0\appsettings.json
+C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\bin\Debug\net10.0\Tests\obj\PracticeAspcoreMVC.Tests.csproj.nuget.dgspec.json
+C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\bin\Debug\net10.0\Tests\obj\project.assets.json
 C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\bin\Debug\net10.0\PracticeAspcoreMVC.staticwebassets.runtime.json
 C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\bin\Debug\net10.0\PracticeAspcoreMVC.staticwebassets.endpoints.json
 C:\Users\WIN11\source\repos\sureshreddyrayapati\EmployeePortal_Aspdotnet_core_mvc\bin\Debug\net10.0\PracticeAspcoreMVC.exe
